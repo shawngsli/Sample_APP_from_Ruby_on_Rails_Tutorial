@@ -67,7 +67,7 @@ Rails.application.configure do
   host = 'floating-hollows-2813.herokuapp.com'
   ActionMailer::Base.smtp_settings = {
     :address              => 'smtp.sendgrid.net',
-    :port                 => 587,
+    :port                 => '587',
     :authentication       => :plain,
     :user_name            => ENV['SENDGRID_USERNAME'],
     :password             => ENV['SENDGRID_PASSWORD'],
